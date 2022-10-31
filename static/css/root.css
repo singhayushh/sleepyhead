@@ -1,0 +1,130 @@
+@font-face {
+    font-family: "NanamiRoundedW01-Book";
+    src: url("//db.onlinewebfonts.com/t/b9d8f7e4ea4e28264963a9672b76cf6c.eot");
+    src: url("//db.onlinewebfonts.com/t/b9d8f7e4ea4e28264963a9672b76cf6c.eot?#iefix") format("embedded-opentype"), url("//db.onlinewebfonts.com/t/b9d8f7e4ea4e28264963a9672b76cf6c.woff2") format("woff2"), url("//db.onlinewebfonts.com/t/b9d8f7e4ea4e28264963a9672b76cf6c.woff") format("woff"), url("//db.onlinewebfonts.com/t/b9d8f7e4ea4e28264963a9672b76cf6c.ttf") format("truetype"), url("//db.onlinewebfonts.com/t/b9d8f7e4ea4e28264963a9672b76cf6c.svg#NanamiRoundedW01-Book") format("svg");
+}
+
+:root {
+    --bg-primary: #181b21;
+    --bg-secondary: #1d1d1d;
+    --branding: #f05756;
+    --text: #5d5f60;
+    --heading: #fbfefd;
+}
+
+* {
+    margin: 0;
+    border: 0;
+    box-sizing: border-box;
+    text-rendering: optimizeLegibility;
+}
+
+html, body {
+    font-family: "NanamiRoundedW01-Book";
+    background-color: var(--bg-primary);
+}
+
+h1, h2, h3 {
+    color: var(--heading);
+    line-height: 1.5;
+    margin-bottom: 2rem;
+}
+
+h1 {
+    font-size: 2.75rem;
+    line-height: 1;
+    font-weight: 400;
+}
+
+h2 {
+    font-size: 2rem;
+    font-weight: 500;
+}
+
+h3 {
+    font-size: 1.5rem;
+    font-weight: 300;
+    text-transform: uppercase;
+}
+
+p {
+    text-align: justify;
+    color: var(--text);
+    margin-bottom: 2rem;
+    max-width: 700px;
+}
+
+a, a:visited, a:hover {
+    text-decoration: none;
+    color: var(--text);
+}
+
+.buttons .btn {
+    width: max-content;
+}
+
+.btn, .btn:visited {
+    width: 100%;
+    padding: 0.75rem 1.5rem;
+    color: var(--heading);
+    background-color: transparent;
+    border: 1px solid var(--text);
+    margin-right: 1rem;
+    margin-bottom: 1rem;
+    border-radius: 20px;
+}
+
+.btn:hover {
+    color: var(--heading);
+    box-shadow: 2px 4px 12px rgba(0, 0, 0, 0.5);
+    transition: all 0.2s ease-in-out;
+}
+
+.cta, .cta:visited {
+    background-color: var(--branding);
+    color: var(--bg-secondary);
+    border: 1px solid var(--branding);
+}
+
+.cta:hover {
+    color: var(--bg-secondary);
+}
+
+section {
+    width: 100%;
+    padding: 10vh 10vw;
+}
+
+.container {
+    width: 100%;
+    max-width: 1140px;
+    margin: auto;
+}
+
+.flex {
+    display: flex;
+}
+
+.span-50 {
+    width: 50%;
+}
+
+.span-100 {
+    width: 100%;
+}
+
+.span-33 {
+    width: 33%;
+}
+
+.span-25 {
+    width: 25%;
+}
+
+.span-75 {
+    width: 75%;
+}
+
+.span-66 {
+    width: 66%;
+}
