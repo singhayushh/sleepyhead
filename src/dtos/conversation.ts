@@ -1,4 +1,4 @@
-import { commentDto } from "./dream";
+import { commentDto } from "./story";
 import { Types, Document } from "mongoose";
 
 export interface conversationInterface extends Document {

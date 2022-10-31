@@ -1,6 +1,6 @@
 import { Types, Document } from "mongoose";
 
-export interface dreamInterface extends Document {
+export interface storyInterface extends Document {
     userId: Types.ObjectId;
     title: string;
     content: string;
@@ -9,7 +9,7 @@ export interface dreamInterface extends Document {
     messages: Array<commentDto>;
 }
 
-export interface createDreamDto {
+export interface createStoryDto {
     userId: Types.ObjectId;
     title: string;
     content: string;
@@ -18,7 +18,7 @@ export interface createDreamDto {
     messages: Array<commentDto>;
 }
 
-export interface updateDreamDto {
+export interface updateStoryDto {
     title?: string;
     content?: string;
     chapter?: string;

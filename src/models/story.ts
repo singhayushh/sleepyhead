@@ -1,7 +1,7 @@
 import { Schema, Model, model } from "mongoose";
-import { commentDto, dreamInterface } from "../dtos/dream";
+import { commentDto, storyInterface } from "../dtos/story";
 
-const dreamSchema: Schema<dreamInterface> = new Schema(
+const storySchema: Schema<storyInterface> = new Schema(
     {
         userId: {
             type: Schema.Types.ObjectId,
@@ -49,6 +49,6 @@ const dreamSchema: Schema<dreamInterface> = new Schema(
     }
 );
 
-const Dream: Model<dreamInterface> = model("Dream", dreamSchema);
+const Story: Model<storyInterface> = model("Story", storySchema);
 
-export default Dream;
+export default Story;
