@@ -6,10 +6,18 @@
 
 :root {
     --bg-primary: #181b21;
-    --bg-secondary: #1d1d1d;
+    --bg-secondary: #111317;
     --branding: #f05756;
     --text: #5d5f60;
     --heading: #fbfefd;
+    --red: rgb(219, 50, 54);
+    --yellow: rgb(244, 194, 13);
+    --blue: rgb(72, 133, 237);
+    --green: rgb(60, 186, 84);
+    --red-bg: rgba(219, 50, 54, 0.2);
+    --yellow-bg: rgba(244, 194, 13, 0.2);
+    --blue-bg: rgba(72, 133, 237, 0.2);
+    --green-bg: rgba(60, 186, 84, 0.2);
 }
 
 * {
@@ -105,8 +113,12 @@ section {
     display: flex;
 }
 
+.fl-box.flex {
+    justify-content: space-between;
+}
+
 .span-50 {
-    width: 50%;
+    width: 48%;
 }
 
 .span-100 {
@@ -118,13 +130,67 @@ section {
 }
 
 .span-25 {
-    width: 25%;
+    width: 23.8%;
 }
 
 .span-75 {
-    width: 75%;
+    width: 73.4%;
 }
 
 .span-66 {
     width: 66%;
+}
+
+.card {
+    padding: 1.5rem;
+    margin-bottom: 0.5rem;
+    background-color: var(--bg-secondary);
+    border-radius: 20px;
+    display: inline-block;
+}
+
+.card-title {
+    color: var(--heading);
+    margin: 1rem 0;
+    text-align: right;
+}
+
+.card-body p {
+    font-size: 80%;
+    text-align: right;
+    line-height: 1.5;
+}
+
+.icon-wrapper {
+    height: 40px;
+    width: 40px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.icon-wrapper .feather {
+    height: 16px;
+    width: 16px;
+}
+
+.icon-red {
+    color: var(--red);
+    background-color: var(--red-bg);
+}
+
+.icon-green {
+    color: var(--green);
+    background-color: var(--green-bg);
+}
+
+.icon-yellow {
+    color: var(--yellow);
+    background-color: var(--yellow-bg);
+}
+
+.icon-blue {
+    color: var(--blue);
+    background-color: var(--blue-bg);
 }
